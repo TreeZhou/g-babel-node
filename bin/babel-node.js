@@ -9,16 +9,16 @@ if (!argv.includes('node-babel') && !argv.includes('init')) {
 
 const init = () => {
   const cmd = 'cnpm i @babel/node @babel/core @babel/preset-env -D';
-  shell.exec(cmd, {}, (...arg) => {
-    console.log(...arg);
+  shell.exec(cmd, {}, (code, res, err) => {
+    if (err) console.log(err);
   });
 };
 
 const action = dir => {
   file = path.resolve(process.cwd(), dir);
   const cmd = `npx babel-node ${file} --presets @babel/env`;
-  shell.exec(cmd, {}, (...arg) => {
-    console.log(...arg);
+  shell.exec(cmd, {}, (code, res, err) => {
+    if (err) console.log(err);
   });
 };
 var program = require('commander');
