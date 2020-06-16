@@ -5,13 +5,13 @@
   "bin": {
     "g-babel-node": "./bin/babel-node.js"
   },
-  "devDependencies": {},
+  "devDependencies": {
+  },
   "dependencies": {
     "@babel/preset-env": "^7.9.0",
     "@babel/core": "^7.9.0",
     "@babel/node": "^7.8.7",
     "commander": "^5.1.0",
-    "cross-spawn": "^7.0.3",
     "path": "^0.12.7",
     "shelljs": "^0.8.4"
   }
