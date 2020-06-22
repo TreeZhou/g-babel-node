@@ -1,12 +1,11 @@
 {
-  "name": "g-babel-node",
+  "name": "babel-tools",
   "version": "1.0.9",
-  "description": "可全局使用的babel-node",
+  "description": "babel-tools",
   "bin": {
-    "g-babel-node": "./bin/babel-node.js"
+    "bt": "./bin/babel-tools.js"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "dependencies": {
     "@babel/preset-env": "^7.9.0",
     "@babel/core": "^7.9.0",
