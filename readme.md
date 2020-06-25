@@ -7,6 +7,5 @@ npm i . -g
 ```
 
 #### usage
-```shell
-g-babel-node -f *.js
-```
+
+

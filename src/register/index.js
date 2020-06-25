@@ -13,6 +13,6 @@ const register = () => {
       require("@babel/polyfill");
       require('<js>');
       `;
-  fs.writeFileSync(process.cwd() + '/babel.js', tmp);
+  fs.writeFileSync(process.cwd() + '/register.js', tmp);
 };
 module.exports = register;
