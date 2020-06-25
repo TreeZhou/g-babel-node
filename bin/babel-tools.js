@@ -11,6 +11,7 @@ program.version('0.1.0').action(() => {
 
 program
   .command('node-babel <arg>')
+  .description('在当前目录下安装node-babel的环境')
   .alias('n')
   .description('<arg>: path of node-babel | init command')
   .action(cmd => {

@@ -8,7 +8,7 @@ const register = () => {
   });
   const tmp = `
       require("@babel/register")({
-      presets: ["@babel/preset-react","@babel/env"],
+      presets: ["@babel/env"],
       });
       require("@babel/polyfill");
       require('<js>');
