@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 var register = require('../src/register/index.js');
+var babelTip = require('../src/babel-tip/index.js');
 var babelNode = require('../src/node-babel/index.js');
 var babelNodeInit = require('../src/node-babel/init.js');
 var babel = require('../src/babel/index.js');
@@ -10,10 +11,10 @@ program.version('0.1.0').action(() => {
 });
 
 program
-  .command('node-babel <arg>')
+  .command('node-babel [arg]')
   .description('在当前目录下安装node-babel的环境')
   .alias('n')
-  .description('<arg>: path of node-babel | init command')
+  .description('[arg]: path of node-babel | init command')
   .action(cmd => {
     if (cmd !== 'init') {
       return babelNode(cmd);
@@ -42,6 +43,14 @@ program
       sourcePath
     });
     babel(options);
+  });
+
+program
+  .command('babel-tip')
+  .description('babel 提示')
+  .alias('t')
+  .action(() => {
+    babelTip();
   });
 
 program.parse(process.argv);
