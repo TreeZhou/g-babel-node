@@ -1,6 +1,6 @@
 var path = require('path');
 var rimraf = require('rimraf').sync;
-var chalk = require('_chalk@4.1.0@chalk');
+var chalk = require('chalk');
 var shell = require('shelljs');
 const cwd = process.cwd();
 const tempPath = path.resolve(__dirname, 'temp');

@@ -1,4 +1,4 @@
-var chalk = require('_chalk@4.1.0@chalk');
+var chalk = require('chalk');
 
 module.exports = async function babel() {
   const msg = `
